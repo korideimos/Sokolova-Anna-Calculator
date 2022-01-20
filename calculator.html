@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="Stylesheet" href = "style.css">
+    <script src = "calc.js"></script>
+</head>
+<body>
+<div id="main">
+	<div class="calculator" >
+        <div class="screen" id="screen" >
+            <div id="rezult" >0</div>
+            <div id="arhiv" hidden="hidden"> </div>
+        </div>
+        <div class="calculator__row1">
+               <button class="button" id="clear" onclick="clearAll()">AC</button>
+               <button class="button" id="delete" onclick="deleteLast()"><</button>
+        </div>
+        <div class="calculator__row2">
+    		   <button class="button dark"
+               id="id7" onclick="f('id7')">7</button>
+    			<button class="button dark"
+                id="id8" onclick="f('id8')">8</button>
+    			<button class="button dark"
+                id="id9" onclick="f('id9')">9</button>
+    			<button class="button"
+                id="idumn" onclick="act('*')">*</button>
+        </div>
+    	<div class="calculator__row3">
+    		    <button class="button dark"
+                id="id4" onclick="f('id4')">4</button>
+    			<button class="button dark"
+                id="id5" onclick="f('id5')">5</button>
+    			<button class="button dark"
+                id="id6" onclick="f('id6')">6</button>
+    			<button class="button"
+                id="iddel" onclick="act('/')">/</button>
+    	</div>
+    	<div class="calculator__row4">
+    			<button class="button dark"
+                id="id1" onclick="f('id1')">1</button>
+    			<button class="button dark"
+                id="id2" onclick="f('id2')">2</button>
+    			<button class="button dark"
+                id="id3" onclick="f('id3')">3</button>
+    			<button class="button"
+                id="idmin" onclick="act('-')">-</button>
+    	</div>
+    	<div class="calculator__row5">
+    			<button class="button"
+                id="id." onclick="f('id.')">.</button>
+                <button class="button dark" id="id0" onclick="f('id0')">0</button>
+    			<button class="button"
+                id="ideq" onclick="equal()">=</button>
+    			<button class="button"
+                id="idpl" onclick="act('+')">+</button>
+        </div>
+    </div>
+</div>
+</html>
